@@ -11,3 +11,12 @@ install:
   - zef install Path::Iterator
   - zef install TAP::Harness
   - zef install Crypt::Random
+  - zef install Crypt::Bcrypt
+  - zef install DBIish
+  - zef install Bailador
+  - zef install Email::Valid
+  - zef install LWP::Simple
+  - zef install IO::Socket::SSL
+#  - zef install Redis
+#  - zef install MongoDB
+
