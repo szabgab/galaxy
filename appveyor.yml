@@ -15,10 +15,10 @@ install:
   - cd %APPVEYOR_BUILD_FOLDER%
   - zef install Test::META
   - zef --force install Path::Iterator
-  - zef --force install File::Directory::Tree
-  - zef --force install Log::Any
+#  - zef --force install File::Directory::Tree
+#  - zef --force install Log::Any
   - zef --force install TAP::Harness
-  - zef --verbose --depsonly install .
+#  - zef --verbose --depsonly install .
 
 test_script:
   #- prove -v -e "perl6 -Ilib" t/
