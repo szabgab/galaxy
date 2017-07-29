@@ -17,7 +17,9 @@ install:
   - zef install Path::Iterator
   - zef install TAP::Harness
   - zef install Crypt::Random
-  - zef install Crypt::Bcrypt
+
+  # Cannot locate native library 
+  # - zef install Crypt::Bcrypt
   - zef install DBIish
 #  - zef install Bailador
 #  - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
