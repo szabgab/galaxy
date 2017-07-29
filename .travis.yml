@@ -13,7 +13,8 @@ install:
   - zef install Crypt::Random
   - zef install Crypt::Bcrypt
   - zef install DBIish
-  - zef install Bailador
+#  - zef install Bailador
+#  - zef -v install https://github.com/ugexe/zef/archive/dev.tar.gz
   - zef install Email::Valid
   - zef install LWP::Simple
   - zef install IO::Socket::SSL
