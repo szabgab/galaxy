@@ -20,8 +20,10 @@ install:
   - zef --force install TAP::Harness
 #  - zef --verbose --depsonly install .
 
+#  - SET PATH=C:\Users\appveyor\rakudobrew\moar-2017.07\install\share\perl6\site\bin;%PATH%
+
 test_script:
-  #- prove -v -e "perl6 -Ilib" t/
-  - prove6
+  - prove -v -e "perl6 -Ilib" t/
+  #- prove6
 
 shallow_clone: true
