@@ -20,6 +20,7 @@ install:
   - zef install Log::Any
   - zef -v info Log::Any
   - zef install Template::Mojo
+  - zef install Terminal::ANSIColor
   - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
   - zef install Email::Valid
   - zef install LWP::Simple
