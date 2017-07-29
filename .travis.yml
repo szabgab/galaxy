@@ -21,7 +21,9 @@ install:
   - zef -v info Log::Any
   - zef install Template::Mojo
   - zef install Terminal::ANSIColor
+  - zef install YAMLish
   - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
+
   - zef install Email::Valid
   - zef install LWP::Simple
   - zef install IO::Socket::SSL
