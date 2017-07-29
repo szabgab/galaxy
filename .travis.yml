@@ -14,6 +14,8 @@ install:
   - zef install Crypt::Bcrypt
   - zef install DBIish
 #  - zef install Bailador
+  - zef install HTTP::Easy
+  - zef -v info HTTP::Easy
   - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
   - zef install Email::Valid
   - zef install LWP::Simple
