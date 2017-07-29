@@ -15,12 +15,23 @@ install:
   - zef install DBIish
 #  - zef install Bailador
 
+# All the prereqs of Bailador
+  - zef install Digest
+  - zef install Digest::HMAC
+  - zef install File::Directory::Tree
+  - zef install File::Find
+  - zef install File::Temp
   - zef install HTTP::Easy
-  - zef -v info HTTP::Easy
+  - zef install HTTP::MultiPartParser
+  - zef install HTTP::Server::Ogre
+  - zef install HTTP::Status
+  - zef install JSON::Fast
   - zef install Log::Any
-  - zef -v info Log::Any
+  - zef install Path::Iterator
   - zef install Template::Mojo
+  - zef install Template::Mustache
   - zef install Terminal::ANSIColor
+  - zef install URI
   - zef install YAMLish
   - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
 
