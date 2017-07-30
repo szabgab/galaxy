@@ -6,15 +6,20 @@ COPY . .
 
 ENV AUTHOR_TESTING=1
 
-RUN echo "===> Installing: Perl6 modules" && \
+RUN echo "===> Installing system dependencies" && \
+    apt-get update && \
+    apt-get -y upgrade && \
+    apt-get install -y libssl-dev && \
+    echo "===> Installing: Perl6 modules" && \
     zef install \
         Test::META \
         Path::Iterator \
         TAP::Harness \
         Crypt::Random \
         # Crypt::Bcrypt \
-        DBIish \
+        DBIish && \
         # All the prereqs of Bailador
+    zef install \
         Digest \
         Digest::HMAC \
         File::Directory::Tree \
@@ -33,12 +38,12 @@ RUN echo "===> Installing: Perl6 modules" && \
         URI \
         YAMLish \
         Email::Valid \
-        LWP::Simple
-        # IO::Socket::SSL \
+        LWP::Simple \
+        IO::Socket::SSL && \
+    zef install \
+        Bailador
+        # additional modules
         # Redis \
         # MongoDB \
-        # Bailador
-
-RUN zef install -v https://github.com/Bailador/Bailador/archive/dev.tar.gz
 
 CMD ["/bin/bash"]
