@@ -33,12 +33,12 @@ RUN echo "===> Installing: Perl6 modules" && \
         URI \
         YAMLish \
         Email::Valid \
-        LWP::Simple \
+        LWP::Simple
         # IO::Socket::SSL \
         # Redis \
         # MongoDB \
-        Bailador
+        # Bailador
 
-# RUN zef install -v https://github.com/Bailador/Bailador/archive/dev.tar.gz
+RUN zef install -v https://github.com/Bailador/Bailador/archive/dev.tar.gz
 
 CMD ["/bin/bash"]
