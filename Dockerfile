@@ -2,8 +2,6 @@ FROM rakudo-star
 
 WORKDIR /srv
 
-COPY . .
-
 ENV AUTHOR_TESTING=1
 
 RUN echo "===> Installing system dependencies" && \
@@ -45,5 +43,7 @@ RUN echo "===> Installing system dependencies" && \
         # additional modules
         # Redis \
         # MongoDB \
+
+COPY . .
 
 CMD ["/bin/bash"]
