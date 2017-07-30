@@ -13,27 +13,27 @@ install:
   - zef install Crypt::Random
   - zef install Crypt::Bcrypt
   - zef install DBIish
-#  - zef install Bailador
 
 # All the prereqs of Bailador
-#  - zef install Digest
-#  - zef install Digest::HMAC
-#  - zef install File::Directory::Tree
-#  - zef install File::Find
-#  - zef install File::Temp
-#  - zef install HTTP::Easy
-#  - zef install HTTP::MultiPartParser
-#  - zef install HTTP::Server::Ogre
-#  - zef install HTTP::Status
-#  - zef install JSON::Fast
-#  - zef install Log::Any
-#  - zef install Path::Iterator
-#  - zef install Template::Mojo
-#  - zef install Template::Mustache
-#  - zef install Terminal::ANSIColor
-#  - zef install URI
-#  - zef install YAMLish
-  - zef -v install --serial https://github.com/Bailador/Bailador/archive/dev.tar.gz
+  - zef install Digest
+  - zef install Digest::HMAC
+  - zef install File::Directory::Tree
+  - zef install File::Find
+  - zef install File::Temp
+  - zef install HTTP::Easy
+  - zef install HTTP::MultiPartParser
+  - zef install HTTP::Server::Ogre
+  - zef install HTTP::Status
+  - zef install JSON::Fast
+  - zef install Log::Any
+  - zef install Path::Iterator
+  - zef install Template::Mojo
+  - zef install Template::Mustache
+  - zef install Terminal::ANSIColor
+  - zef install URI
+  - zef install YAMLish
+  - zef install Bailador
+#  - zef -v install --serial https://github.com/Bailador/Bailador/archive/dev.tar.gz
 
   - zef install Email::Valid
   - zef install LWP::Simple
