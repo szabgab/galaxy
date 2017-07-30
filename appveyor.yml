@@ -23,7 +23,7 @@ install:
 
   - zef install DBIish
 
-#  - zef install Bailador
+  - zef install Bailador
 # File::Directory::Tree cannot be installed. asked for maintenance
 #  - zef -v install https://github.com/Bailador/Bailador/archive/dev.tar.gz
 
