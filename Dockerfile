@@ -18,32 +18,32 @@ RUN echo "===> Installing system dependencies" && \
         # Crypt::Bcrypt \
         DBIish && \
         # All the prereqs of Bailador
+    #zef install \
+    #    Digest \
+    #    Digest::HMAC \
+    #    File::Directory::Tree \
+    #    File::Find \
+    #    File::Temp \
+    #    HTTP::Easy \
+    #    HTTP::MultiPartParser \
+    #    HTTP::Server::Ogre \
+    #    HTTP::Status \
+    #    JSON::Fast \
+    #    Log::Any \
+    #    Path::Iterator \
+    #    Template::Mojo \
+    #    Template::Mustache \
+    #    Terminal::ANSIColor \
+    #    URI \
+    #    YAMLish \
+    #    Email::Valid \
+    #    LWP::Simple \
+    #    IO::Socket::SSL && \
     zef install \
-        Digest \
-        Digest::HMAC \
-        File::Directory::Tree \
-        File::Find \
-        File::Temp \
-        HTTP::Easy \
-        HTTP::MultiPartParser \
-        HTTP::Server::Ogre \
-        HTTP::Status \
-        JSON::Fast \
-        Log::Any \
-        Path::Iterator \
-        Template::Mojo \
-        Template::Mustache \
-        Terminal::ANSIColor \
-        URI \
-        YAMLish \
-        Email::Valid \
-        LWP::Simple \
-        IO::Socket::SSL && \
-    zef install \
-        Bailador \
+        Bailador
         # additional modules
         # Redis \
-        MongoDB
+        # MongoDB
 
 COPY . .
 
