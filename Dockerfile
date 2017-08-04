@@ -8,6 +8,7 @@ RUN echo "===> Installing system dependencies" && \
     apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y libssl-dev && \
+    apt-get install -y mongodb-server && \
     echo "===> Installing: Perl6 modules" && \
     zef install \
         Test::META \
@@ -39,10 +40,10 @@ RUN echo "===> Installing system dependencies" && \
         LWP::Simple \
         IO::Socket::SSL && \
     zef install \
-        Bailador
+        Bailador \
         # additional modules
         # Redis \
-        # MongoDB \
+        MongoDB
 
 COPY . .
 
