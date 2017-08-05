@@ -9,6 +9,7 @@ RUN echo "===> Installing system dependencies" && \
     apt-get -y upgrade && \
     apt-get install -y libssl-dev && \
     apt-get install -y mongodb-server && \
+    apt-get install -y redis-server && \
     echo "===> Installing: Perl6 modules" && \
     zef install \
         Test::META \
