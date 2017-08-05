@@ -18,6 +18,8 @@ RUN echo "===> Installing system dependencies" && \
         Crypt::Random \
         # Crypt::Bcrypt \
         DBIish && \
+        Crust && \
+        Sparrowdo && \
         # All the prereqs of Bailador
     #zef install \
     #    Digest \
