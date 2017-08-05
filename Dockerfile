@@ -17,9 +17,10 @@ RUN echo "===> Installing system dependencies" && \
         TAP::Harness \
         Crypt::Random \
         # Crypt::Bcrypt \
-        DBIish && \
-        Crust && \
-        Sparrowdo && \
+        DBIish \
+        Crust \
+        Sparrowdo \
+        && \
         # All the prereqs of Bailador
     #zef install \
     #    Digest \
