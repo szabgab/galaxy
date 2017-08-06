@@ -10,6 +10,7 @@ RUN echo "===> Installing system dependencies" && \
     apt-get install -y libssl-dev && \
     apt-get install -y mongodb-server && \
     apt-get install -y redis-server && \
+    apt-get install -y memcached && \
     echo "===> Installing: Perl6 modules" && \
     zef install \
         Test::META \
@@ -18,8 +19,9 @@ RUN echo "===> Installing system dependencies" && \
         Crypt::Random \
         # Crypt::Bcrypt \
         DBIish \
-        Crust \
-        Sparrowdo \
+#        Crust \
+#        Sparrowdo \
+        Cache::Memcached \
         && \
         # All the prereqs of Bailador
     #zef install \
