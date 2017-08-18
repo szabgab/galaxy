@@ -19,8 +19,10 @@ RUN echo "===> Installing system dependencies" && \
         Crypt::Random \
         # Crypt::Bcrypt \
         DBIish \
-        Crust \
-#        Sparrowdo \
+#        Crust \
+#        https://travis-ci.org/szabgab/galaxy/builds/265911018
+#        https://github.com/tokuhirom/p6-HTTP-Server-Tiny/issues/63
+        Sparrowdo \
         Cache::Memcached \
         && \
         # All the prereqs of Bailador
@@ -47,7 +49,8 @@ RUN echo "===> Installing system dependencies" && \
     #    IO::Socket::SSL && \
     zef install \
         Bailador \
-    #    Inline::Perl5 \   # https://travis-ci.org/szabgab/galaxy/builds/265902800
+    #    Inline::Perl5 \
+    #    https://travis-ci.org/szabgab/galaxy/builds/265902800
         App::Mi6 \
         HTTP::UserAgent
         # additional modules
