@@ -47,7 +47,7 @@ RUN echo "===> Installing system dependencies" && \
     #    IO::Socket::SSL && \
     zef install \
         Bailador \
-        Inline::Perl5 \
+    #    Inline::Perl5 \   # https://travis-ci.org/szabgab/galaxy/builds/265902800
         App::Mi6 \
         HTTP::UserAgent
         # additional modules
