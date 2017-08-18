@@ -13,5 +13,3 @@ after_success:
           docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
           docker push szabgab/galaxy;
       fi
-notifications:
-    slack: perl6-bailador:FuFG55nk94k5BSOeGMNO5nDh
