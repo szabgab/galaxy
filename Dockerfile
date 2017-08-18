@@ -46,7 +46,10 @@ RUN echo "===> Installing system dependencies" && \
     #    LWP::Simple \
     #    IO::Socket::SSL && \
     zef install \
-        Bailador
+        Bailador \
+        Inline::Perl5 \
+        App::Mi6 \
+        HTTP::UserAgent
         # additional modules
         # Redis \
         # MongoDB
