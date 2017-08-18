@@ -19,7 +19,7 @@ RUN echo "===> Installing system dependencies" && \
         Crypt::Random \
         # Crypt::Bcrypt \
         DBIish \
-#        Crust \
+        Crust \
 #        Sparrowdo \
         Cache::Memcached \
         && \
