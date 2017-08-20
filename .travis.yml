@@ -5,10 +5,10 @@ services:
 env:
     - AUTHOR_TESTING=1
 install:
-    - docker build -t szabgab/galaxy .
+    - travis_retry docker build -t szabgab/galaxy .
 script:
-    #- docker run szabgab/galaxy prove6 -l
-    - docker run szabgab/galaxy (cd /srv/p6-HTTP-Server-Tiny && prove6 t/09-chunked-request.t)
+    - docker run szabgab/galaxy prove6 -l
+    #- docker run szabgab/galaxy (cd /srv/p6-HTTP-Server-Tiny && prove6 t/09-chunked-request.t)
 
 after_success:
     - if [ "$TRAVIS_BRANCH" == "master" ]; then
