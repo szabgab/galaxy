@@ -43,4 +43,6 @@ RUN echo "===> Installing system dependencies" && \
 
 COPY . .
 
+COPY bashrc /root/.bashrc
+
 CMD ["/bin/bash"]
