@@ -11,6 +11,9 @@ RUN echo "===> Installing system dependencies" && \
     apt-get install -y mongodb-server && \
     apt-get install -y redis-server && \
     apt-get install -y memcached && \
+    apt-get install -y unzip && \
+    apt-get install -y less && \
+    apt-get install -y vim && \
     echo "===> Installing: Perl6 modules" && \
     zef install \
         Test::META \
