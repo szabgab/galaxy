@@ -27,7 +27,7 @@ RUN echo "===> Installing system dependencies" && \
 #        https://github.com/tokuhirom/p6-HTTP-Server-Tiny/issues/63
         Sparrowdo \
         Cache::Memcached \
-        && \
+#        && \
 #    zef install \
 #        Bailador \
 #    #    Inline::Perl5 \
@@ -42,7 +42,7 @@ RUN echo "===> Installing system dependencies" && \
         # Redis \
         # MongoDB
 
-# COPY . .
+COPY . .
 
 COPY bashrc /root/.bashrc
 
