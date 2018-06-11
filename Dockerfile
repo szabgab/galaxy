@@ -28,13 +28,13 @@ RUN echo "===> Installing system dependencies" && \
         Sparrowdo \
         Cache::Memcached \
         && \
-    zef install \
-        Bailador \
-    #    Inline::Perl5 \
-    #    https://travis-ci.org/szabgab/galaxy/builds/265902800
-        App::Mi6 \
-        HTTP::UserAgent \
-        Crust
+#    zef install \
+#        Bailador \
+#    #    Inline::Perl5 \
+#    #    https://travis-ci.org/szabgab/galaxy/builds/265902800
+#        App::Mi6 \
+#        HTTP::UserAgent \
+#        Crust
 
 #RUN git clone https://github.com/tokuhirom/p6-HTTP-Server-Tiny.git 
 #RUN cd p6-HTTP-Server-Tiny && prove6 t/09-chunked-request.t
