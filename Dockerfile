@@ -26,7 +26,7 @@ RUN echo "===> Installing system dependencies" && \
 #        https://travis-ci.org/szabgab/galaxy/builds/265911018
 #        https://github.com/tokuhirom/p6-HTTP-Server-Tiny/issues/63
         Sparrowdo \
-        Cache::Memcached \
+        Cache::Memcached
 #        && \
 #    zef install \
 #        Bailador \
