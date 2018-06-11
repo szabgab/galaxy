@@ -43,6 +43,7 @@ RUN echo "===> Installing system dependencies" && \
         # MongoDB
 
 COPY . .
+ADD . /srv
 
 # COPY bashrc /root/.bashrc
 
