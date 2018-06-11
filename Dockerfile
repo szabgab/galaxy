@@ -42,8 +42,7 @@ RUN echo "===> Installing system dependencies" && \
         # Redis \
         # MongoDB
 
-COPY . .
-ADD . /srv
+COPY . /srv/
 
 # COPY bashrc /root/.bashrc
 
