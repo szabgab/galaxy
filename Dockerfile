@@ -7,6 +7,7 @@ ENV AUTHOR_TESTING=1
 RUN echo "===> Installing system dependencies" && \
     apt-get update && \
     apt-get -y upgrade && \
+    apt-get install -y build-essential && \
     apt-get install -y libssl-dev && \
     apt-get install -y mongodb-server && \
     apt-get install -y redis-server && \
