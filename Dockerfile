@@ -42,8 +42,8 @@ RUN echo "===> Installing system dependencies" && \
         # Redis \
         # MongoDB
 
-COPY . .
+# COPY . .
 
-COPY bashrc /root/.bashrc
+# COPY bashrc /root/.bashrc
 
 CMD ["/bin/bash"]
